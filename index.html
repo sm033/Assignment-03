@@ -35,44 +35,53 @@
         </style>
 </head>
 <body>
-    <header>
-        <!-- navbar  -->
-        <nav>
-          <div class="navbar bg-base-100 md:bg-nav-clr">
-            <div class="navbar-start  ">
-              <ul class="flex gap-7 pl-14 cursor-pointer">
-                <li class="text-white text-lg  hover:text-gray-600 font-medium">Home</li>
-                <li class="text-white text-lg hover:text-gray-600 font-medium">About Us</li>
-                <li class="text-white text-lg hover:text-gray-600 font-medium">Shop</li>
-                <li class="text-white text-lg hover:text-gray-600 font-medium">All fruits</li>
+    <header  class="md:mt-12 md:mx-20 lg:mx-40 ">
+        <!-- navbar start  -->
+        <nav >
+          <div class="navbar md:bg-nav-clr  md: rounded-[600px] p-0 ">
+            <div class="navbar-start pl-10 hidden lg:flex ">
+              <ul class="flex gap-6 cursor-pointer">
+                <li class="text-white text-base  hover:text-gray-600 font-normal">Home</li>
+                <li class="text-white text-base hover:text-gray-600 font-normal">About Us</li>
+                <li class="text-white text-base hover:text-gray-600 font-normal">Shop</li>
+                <li class="text-white text-base hover:text-gray-600 font-normal">All fruits</li>
               </ul>
-              <div class="dropdown md:hidden">
-                <label tabindex="0" class="btn btn-ghost btn-circle">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-                </label>
-                <ul tabindex="0" class="flex flex-col -right-full items-center cursor-pointer menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li class="text-black text-lg hover:text-gray-600 font-medium">Home</li>
-                  <li class="text-black text-lg hover:text-gray-600 font-medium">About Us</li>
-                  <li class="text-black text-lg hover:text-gray-600 font-medium">Shop</li>
-                  <li class="text-black text-lg hover:text-gray-600 font-medium">All fruits</li>
-                </ul>
+            </div>
+            <!-- center img -->
+            <div class="navbar-start ml-5 mt-10 md:mt-0 md:ml-10 lg:ml-14  gap-3  ">
+              <img class=" w-[40px] h-auto lg:py-5 md:py-3 " src="./images/logo.png" alt="">
+              <a class="md:text-white  text-[#121212] text-2xl md:text-4xl font-semibold normal-case">Fruit Burst</a>
+           </div>
+
+              
+
+
+          
+            <!-- hidden section -->
+            <div class="dropdown dropdown-end  lg:hidden mt-10 md:mt-0 ml-32 md:ml-44">
+              <label tabindex="0" class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+              </label>
+              <ul tabindex="0" class="flex flex-col  items-center cursor-pointer menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-36">
+                <li class="text-black text-lg hover:bg-slate-400 font-medium">Home</li>
+                <li class="text-black text-lg hover:bg-slate-400 font-medium">About Us</li>
+                <li class="text-black text-lg hover:bg-slate-400 font-medium">Shop</li>
+                <li class="text-black text-lg hover:bg-slate-400 font-medium">All fruits</li>
+                <li><img class="hover:bg-slate-600" src="./images/Frame (3).png" alt=""></li>
+              </ul>
+            </div>
+            <!-- search-bar -->
+              <div class=" hidden lg:flex form-control pr-7 ">
+                <input type="text" placeholder="Search" class="input navbar-end md:w-auto lg:w-[300px] rounded-[50px]" />
+                 <img class="absolute mt-3 ml-60" src="./images/Frame (3).png" alt=""> 
               </div>
             </div>
-
-
-            <div class="md:navbar-center navbar-start items-center gap-4">
-               <img class=" py-7  h-12w-[54] " src="./images/logo.png" alt="">
-               <p class="md:text-white text-2xl md:text-4xl font-bold">Fruit Burst</p>
-            </div>
-            <div class="navbar-end">
-              <button class="btn btn-ghost btn-circle">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-              </button>
-              
-              </button>
-            </div>
+          </div>
+           
           </div>
         </nav>
+        <!-- navbar end -->
+        
           
 
     </header>
